@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">FinalProj</string>
+    <string name="app_name">IOTique</string>
+    <string name="title">IOTique</string>
+    <string name="summary">Remote of your Device</string>
 </resources>

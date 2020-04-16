@@ -1,11 +1,11 @@
 package com.example.finalproj;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class fourthactivity extends AppCompatActivity {
     Button fan, light, fridge, ac;
@@ -15,13 +15,10 @@ public class fourthactivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fourthactivity);
-        fan = (Button) findViewById(R.id.button1);
-        light = (Button) findViewById(R.id.button2);
-        ac= (Button) findViewById(R.id.button3);
-        fridge = (Button) findViewById(R.id.button4);
-
-
-
+        fan = findViewById(R.id.fanButton);
+        light = findViewById(R.id.lightButton);
+        ac = findViewById(R.id.acButton);
+        fridge = findViewById(R.id.fridgeButton);
 
         fan.setOnClickListener(new View.OnClickListener() {
             @Override

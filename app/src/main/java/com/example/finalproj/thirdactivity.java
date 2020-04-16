@@ -1,11 +1,11 @@
 package com.example.finalproj;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class thirdactivity extends AppCompatActivity {
     Button bedroom, kitchen, hall, dining;
@@ -14,10 +14,10 @@ public class thirdactivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_thirdactivity);
-        bedroom = (Button) findViewById(R.id.button1);
-        kitchen = (Button) findViewById(R.id.button2);
-        hall = (Button) findViewById(R.id.button3);
-        dining = (Button) findViewById(R.id.button4);
+        bedroom = findViewById(R.id.bedroom);
+        kitchen = findViewById(R.id.kitchen);
+        hall = findViewById(R.id.hall);
+        dining = findViewById(R.id.dining);
 
 
         bedroom.setOnClickListener(new View.OnClickListener() {
