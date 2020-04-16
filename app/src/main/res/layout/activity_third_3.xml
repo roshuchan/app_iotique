@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcfc03"
+    tools:context="com.example.finalproj.third_3"
+    tools:showIn="@layout/activity_third_3">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image1"
+        android:src="@drawable/ic_launcher_foreground"
+        />
+    <TextView
+        android:id="@+id/textView1"
+        android:text="Current Consumption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingRight="100dp"
+        />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:text="Device Wise Consumption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:layout_centerInParent="true"
+        android:paddingTop="50dp"
+        android:paddingRight="80dp"
+        />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:text="Bill Due On"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_centerInParent="true"
+        android:paddingTop="50dp"
+        android:paddingRight="150dp"
+
+
+        />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:text="1755kWh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@id/textView1"
+        android:paddingRight="5dp"
+
+        />
+
+
+    <EditText
+        android:id="@+id/editText2"
+        android:text="1450kwh "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@id/textView2"
+        android:layout_below="@+id/editText1"
+        android:paddingTop="35dp"
+
+
+   />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:text="18-04-2020 "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignRight="@id/textView3"
+        android:layout_below="@+id/editText2"
+
+        android:paddingTop="35dp"
+
+        />
+</RelativeLayout>
