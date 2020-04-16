@@ -1,13 +1,12 @@
 package com.example.finalproj;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
   EditText name;
@@ -17,9 +16,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-      name=(EditText)findViewById(R.id.text1);
-        password=(EditText)findViewById(R.id.text2);
-        login=(Button)findViewById(R.id.button1);
+        name = findViewById(R.id.username);
+        password = findViewById(R.id.password);
+        login = findViewById(R.id.loginButton);
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
